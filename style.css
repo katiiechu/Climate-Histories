@@ -51,7 +51,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: drop-shadow(0 0 15px rgba(255,255,255,0.3));
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.6));
 }
 
 @keyframes floatShape {
@@ -60,6 +60,20 @@ body {
     100% { transform: translateY(0) rotate(360deg); }
 }
 
+.earth-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0; /* vertical spacing */
+    position: relative;
+    z-index: -1; /* behind content but scrolls */
+}
+
+.earth {
+    width: 300px; /* adjust size */
+    opacity: 0.25;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-out;
+}
 
 /* ==========================
    NAVIGATION
