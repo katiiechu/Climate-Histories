@@ -1,111 +1,160 @@
-<!DOCTYPE html>
+my html: <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Gap | US-China Climate Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Gap | US-China Climate Policy</title>
 
-<!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
-<!-- MAIN CSS -->
-<link rel="stylesheet" href="style.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- PARTICLE CANVAS -->
-<div id="canvas-container">
+    <!-- BACKGROUND -->
     <canvas id="particle-canvas"></canvas>
-</div>
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
 
-<!-- GLOW BLOBS -->
-<div class="glow-blob orb-1"></div>
-<div class="glow-blob orb-2"></div>
-<div class="glow-blob orb-3"></div>
-
-<!-- NAVIGATION -->
-<nav>
-    <div class="logo">GREEN<span>GAP</span></div>
-    <div class="nav-links">
-        <button onclick="navigateTo('home')" class="nav-item active" id="btn-home">HOME</button>
-        <button onclick="navigateTo('about')" class="nav-item" id="btn-about">ABOUT</button>
-        <button onclick="navigateTo('interviews')" class="nav-item" id="btn-interviews">INTERVIEWS</button>
-        <button onclick="navigateTo('resources')" class="nav-item" id="btn-resources">RESOURCES</button>
-    </div>
-</nav>
-
-<!-- MAIN CONTENT -->
-<main>
-    <section id="home" class="page">
-        <div class="hero-content">
-            <div class="badge">IPE</div>
-            <h1>Green Gap: <br><span class="accent-text">The U.S. vs China’s</span> <br>Climate Policies</h1>
-            <p class="hero-sub">with Dr. Kyle Chan, Dr. Barry Rabe, and Li Shuo.</p>
-            <div class="cta-group">
-                <button class="primary-btn" onclick="navigateTo('interviews')">Explore Interviews</button>
-            </div>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">GREEN<span>GAP</span></div>
+        <div class="nav-links">
+            <button onclick="navigateTo('home')" class="nav-item active" id="btn-home">HOME</button>
+            <button onclick="navigateTo('about')" class="nav-item" id="btn-about">ABOUT</button>
+            <button onclick="navigateTo('interviews')" class="nav-item" id="btn-interviews">INTERVIEWS</button>
+            <button onclick="navigateTo('resources')" class="nav-item" id="btn-resources">RESOURCES</button>
         </div>
-    </section>
+    </nav>
 
-    <section id="about" class="page">
-        <div class="glass-container">
-            <h2 class="title-serif">The Rift</h2>
-            <div class="about-flex">
-                <div class="about-text">
-                    <p>This project explores the friction between the world's two largest economies when it comes to climate policy...</p>
-                    <br>
-                    <p>Dr. Kyle Chan is a foreign policy fellow at the John L. Thornton China Center of the Brookings Institution...</p>
-                    <br>
-                    <p>Dr. Barry Rabe is the Arthur Thurnau Professor Emeritus of Environmental Policy at the University of Michigan...</p>
-                    <br>
-                    <p>Li Shuo is the Director of China Climate Hub at the Asia Society Policy Institute...</p>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HOME PAGE -->
+        <section id="home" class="page active">
+            <div class="hero-content">
+                <div class="badge">IPE</div>
+                <h1>Green Gap: <br><span class="accent-text">The U.S. vs China’s</span> <br>Climate Policies</h1>
+                <p class="hero-sub">with Dr. Kyle Chan, Dr. Barry Rabe, and Li Shuo.</p>
+                <div class="cta-group">
+                    <button class="primary-btn" onclick="navigateTo('interviews')">Explore Interviews</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="interviews" class="page">
-        <h2 class="center-label">The Trilogy</h2>
-        <div class="trilogy-grid">
-            <div class="episode-card">
-                <span class="ep-tag">Part I</span>
-                <h3>Interview with Dr. Kyle Chan</h3>
-                <audio controls preload="metadata">
-                    <source src="./KyleChan_Interview.mp3" type="audio/mpeg">
-                </audio>
-                <a href="#" class="primary-btn">View Transcript</a>
+        <!-- ABOUT PAGE -->
+        <section id="about" class="page">
+            <div class="glass-container">
+                <h2 class="title-serif">The Rift</h2>
+                <div class="about-flex">
+                    <div class="about-text">
+                        <p>
+                            This project explores the friction between the world's two largest economies when it comes to climate policy. Here, climate experts tackle the reasons for China's dominance in green energy and emissions reductions (not without addressing its challenges) and predict its future direction. We also consider that the US lags behind China in this capacity, examining why that is the case.
+                        </p>
+                        <br>
+                        <p>
+                            Dr. Kyle Chan is a foreign policy fellow at the John L. Thornton China Center of the Brookings Institution. His interests lie in China's industrial policy, where leveraged technologies like semiconductors, electric vehicles, and batteries are used to bolster their economy.
+                        </p>
+                        <br>
+                        <p>
+                            Dr. Barry Rabe is the Arthur Thurnau Professor Emeritus of Environmental Policy at the University of Michigan. His work focuses on the durability and efficacy of U.S. climate policy.
+                        </p>
+                        <br>
+                        <p>
+                            Li Shuo is the Director of China Climate Hub at the Asia Society Policy Institute and the Global Policy Advisor for Greenpeace East Asia. He is dedicated to analyzing the international sphere's relationship with Chinese climate agendas.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="episode-card">
-                <span class="ep-tag">Part II</span>
-                <h3>Interview with Dr. Barry Rabe</h3>
-                <audio controls preload="metadata">
-                    <source src="./BarryRabe_Interviewtwo.mp3" type="audio/mpeg">
-                </audio>
-                <a href="#" class="primary-btn">View Transcript</a>
-            </div>
-            <div class="episode-card">
-                <span class="ep-tag">Part III</span>
-                <h3>Interview with Li Shuo</h3>
-                <audio controls preload="metadata">
-                    <source src="./LiShuo_Interview.mp3" type="audio/mpeg">
-                </audio>
-                <a href="#" class="primary-btn">View Transcript</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="resources" class="page">
-        <div class="glass-container">
-            <h2 class="title-serif">Further Reading & Resources</h2>
-            <div class="resource-list">
-                <a class="res-item" href="#" target="_blank"><span>01</span><p>Annotated Bibliography</p></a>
-                <a class="res-item" href="#" target="_blank"><span>02</span><p>List of Interview Questions</p></a>
-                <a class="res-item" href="#" target="_blank"><span>03</span><p>China Energy Transition Review 2025</p></a>
-            </div>
-        </div>
-    </section>
-</main>
+        <!-- INTERVIEWS PAGE -->
+        <section id="interviews" class="page">
+            <h2 class="center-label">The Trilogy</h2>
+            <div class="trilogy-grid">
 
-<script src="script.js"></script>
+                <!-- Part I -->
+                <div class="episode-card">
+                    <span class="ep-tag">Part I</span>
+                    <h3>Interview with Dr. Kyle Chan</h3>
+                    <audio controls preload="metadata">
+                <source src="./KyleChan_Interview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+                    <p></p>
+                    <a href="https://docs.google.com/document/d/1WzO2UYPyTtpWzL2GTBrra2kXQqDmZym-efwrh5xZlRM/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="primary-btn">
+        View Transcript
+    </a>
+</div>
+                </div>
+
+                <!-- Part II -->
+                <div class="episode-card">
+                    <span class="ep-tag">Part II</span>
+                    <h3>Interview with Dr. Barry Rabe</h3>
+                    <audio controls preload="metadata">
+                <source src="./BarryRabe_Interviewtwo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+                    <p></p>
+                 <a href="https://docs.google.com/document/d/1H2igZu63ryHHklGjmHDwogUn50u3TtW47F-pLWsSZsU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="primary-btn">
+        View Transcript
+    </a>
+                </div>
+
+                <!-- Part III -->
+                <div class="episode-card">
+                    <span class="ep-tag">Part III</span>
+                    <h3>Interview with Li Shuo</h3>
+                    <audio controls preload="metadata">
+                <source src="./LiShuo_Interview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+                    <p></p>
+                    <a href="https://docs.google.com/document/d/1TewgyWTjdaj-Rr9jq1NgqQNCtPBkjCAnjHh_S1AWPss/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="primary-btn">
+        View Transcript
+    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RESOURCES PAGE -->
+        <section id="resources" class="page">
+            <div class="glass-container">
+                <h2 class="title-serif">Further Reading & Resources</h2>
+                <div class="resource-list">
+                    <a class="res-item" 
+                       href="https://docs.google.com/document/d/192NedWvmJP2P2PXQ-XKyhrrOHZxPKHfF9PgRNpJWuyU/edit?usp=drivesdk" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <span>01</span>
+                        <p>Annotated Bibliography</p>
+                    </a>
+
+                    <a class="res-item" 
+                       href="https://docs.google.com/document/d/1RYHJ8sP_RpvJbEN3Ge5YQdjqbw2dtOUIg7xt0Tzs4DQ/edit?usp=drivesdk" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <span>02</span>
+                        <p>List of Interview Questions</p>
+                    </a>
+
+                    <a class="res-item" 
+                       href="https://ember-energy.org/latest-insights/china-energy-transition-review-2025/" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <span>03</span>
+                        <p>China Energy Transition Review 2025</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MAIN JS -->
+    <script defer src="script.js"></script>
 </body>
 </html>
