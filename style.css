@@ -243,9 +243,11 @@ audio {
 }
 
 .cta-group {
-    margin-top: 2rem; 
+    margin-top: 3rem; 
 }
 
+.hero-sub {
+    margin-bottom: 2rem; /* space below subtitle */
 
 @media (max-width: 1024px) {
     .trilogy-grid { grid-template-columns: repeat(2, 1fr); }
