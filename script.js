@@ -58,14 +58,6 @@ function initParticles() {
 }
 initParticles();
 
-// Rotate Earth slightly as user scrolls
-const earth = document.querySelector('.earth');
-
-window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY;
-    earth.style.transform = `rotate(${scrollPos * 0.05}deg)`; // rotates slowly with scroll
-});
-
 function animateParticles() {
     ctx.clearRect(0,0,canvas.width,canvas.height);
     particlesArray.forEach(p => {
