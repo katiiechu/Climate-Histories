@@ -143,6 +143,9 @@ h1 {
     opacity: 0.5;
     font-size: 1.2rem;
     max-width: 500px;
+    margin-top: 1.5rem;  /* space above subtitle */
+    margin-bottom: 1.5rem; /* keep space below for button */
+
 }
 
 .glass-container {
@@ -237,6 +240,10 @@ audio {
 .res-item:hover {
     background: var(--glass);
     color: var(--primary);
+}
+
+.cta-group {
+    margin-top: 2rem; 
 }
 
 
