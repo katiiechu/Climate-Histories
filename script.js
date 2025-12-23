@@ -42,13 +42,8 @@ window.addEventListener('DOMContentLoaded', () => {
             this.speedX = (Math.random() - 0.5) * 0.5;
             this.speedY = (Math.random() - 0.5) * 0.5;
 
-            const colors = [
-                'rgba(82,255,155,0.6)',
-                'rgba(255,82,180,0.5)',
-                'rgba(82,155,255,0.5)',
-                'rgba(255,215,82,0.4)'
-            ];
-            this.color = colors[Math.floor(Math.random() * colors.length)];
+            this.color = 'rgba(120, 180, 255, 0.6)';
+
         }
         update() {
             this.x += this.speedX;
