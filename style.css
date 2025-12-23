@@ -226,12 +226,20 @@ audio {
     transition: 0.3s;
 }
 
+.nav-item,
+.primary-btn,
+.glass-container,
+.episode-card,
+.res-item {
+    border-radius: 20px; 
+}
+
 .res-item:hover {
     background: var(--glass);
     color: var(--primary);
 }
 
-/* RESPONSIVE FIXES */
+
 @media (max-width: 1024px) {
     .trilogy-grid { grid-template-columns: repeat(2, 1fr); }
     nav { padding: 30px 40px; }
