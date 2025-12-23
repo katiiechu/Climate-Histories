@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // Page navigation
+
+    // =========================
+    // PAGE NAVIGATION
+    // =========================
     function navigateTo(pageId) {
         const pages = document.querySelectorAll('.page');
         pages.forEach(p => p.classList.remove('active'));
@@ -12,11 +15,18 @@ window.addEventListener('DOMContentLoaded', () => {
         const activeBtn = document.getElementById(`btn-${pageId}`);
         if (activeBtn) activeBtn.classList.add('active');
     }
-    window.navigateTo = navigateTo; 
 
-    // Particle canvas
+    // Make it global so nav buttons can call it
+    window.navigateTo = navigateTo;
+
+    // Activate home page on load
+    navigateTo('home');
+
+    // =========================
+    // PARTICLE CANVAS
+    // =========================
     const canvas = document.getElementById('particle-canvas');
-    if (!canvas) return; 
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
 
     function resizeCanvas() {
@@ -49,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
         draw() {
             ctx.fillStyle = this.color;
             ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI*2);
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
         }
     }
@@ -61,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function animateParticles() {
-        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         particlesArray.forEach(p => {
             p.update();
             p.draw();
