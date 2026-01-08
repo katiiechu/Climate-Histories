@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+
 body {
     background: var(--bg);
     color: white;
@@ -23,14 +23,14 @@ body {
     position: relative;
 }
 
-/* MAIN CONTAINER */
+
 main {
     position: relative;
     width: 100%;
     min-height: 100vh;
 }
 
-/* PAGE SECTIONS */
+
 .page {
     position: absolute;
     top: 0;
@@ -53,7 +53,7 @@ main {
     pointer-events: auto;
 }
 
-/* GLOW BLOBS */
+
 .glow-blob {
     position: fixed;
     border-radius: 50%;
@@ -72,7 +72,7 @@ main {
     to { transform: scale(1.2); }
 }
 
-/* NAVIGATION */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -115,7 +115,7 @@ nav {
     padding-bottom: 4px;
 }
 
-/* HEADINGS & CONTENT */
+
 .badge {
     font-size: 10px;
     color: var(--primary);
@@ -157,7 +157,7 @@ h1 {
     border-radius: 4px;
 }
 
-/* INTERVIEWS GRID */
+
 .trilogy-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -179,7 +179,7 @@ h1 {
     background: rgba(82, 255, 155, 0.05);
 }
 
-/* AUDIO PLAYER */
+
 audio {
     width: 100%;
     margin: 20px 0;
@@ -187,7 +187,7 @@ audio {
     opacity: 0.6;
 }
 
-/* BUTTONS */
+
 .primary-btn {
     background: var(--primary);
     border: none;
@@ -208,7 +208,7 @@ audio {
     box-shadow: 0 10px 20px rgba(82, 255, 155, 0.2);
 }
 
-/* PARTICLE CANVAS */
+
 #canvas-container {
     position: fixed;
     top: 0;
